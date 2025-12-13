@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(46,42,39,0.7), rgba(46,42,39,0.4));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--soft-white);
+  max-width: 800px;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.hero-btn,
+.hero-btn-secondary {
+  padding: 12px 26px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-medium);
+  font-size: 1rem;
+  box-shadow: var(--soft-shadow);
+}
+
+.hero-btn {
+  background: var(--latte-beige);
+  color: var(--coffee-dark);
+}
+
+.hero-btn:hover {
+  background: var(--gold);
+  transform: scale(1.05);
+  box-shadow: var(--deep-shadow);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--soft-white);
+  color: var(--soft-white);
+}
+
+.hero-btn-secondary:hover {
+   background: var(--gold);
+  transform: scale(1.05);
+  box-shadow: var(--deep-shadow);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  margin-top: 40px;
+}
+.scroll-indicator span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid var(--soft-white);
+  border-right: 2px solid var(--soft-white);
+  transform: rotate(45deg);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(10px) rotate(45deg); }
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .hero-title { font-size: 2.4rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-buttons { flex-direction: column; }
+}

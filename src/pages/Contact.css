@@ -1,0 +1,133 @@
+:root {
+  --contact-bg: #0e0e0e;
+  --contact-card: #1a1a1a;
+  --contact-accent: #c59d5f;
+  --contact-text: #e6e6e6;
+  --contact-text-light: #b3b3b3;
+  --contact-radius: 12px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: block;
+}
+.contact-page {
+  background: var(--contact-bg);
+  min-height: 100vh;
+  padding: 80px 10%;
+  color: var(--contact-text);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--contact-accent);
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--contact-text-light);
+}
+
+/* Container */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Contact Form */
+.contact-form {
+  background: var(--contact-card);
+  padding: 30px;
+  border-radius: var(--contact-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: var(--contact-radius);
+  border: none;
+  background: #262626;
+  color: var(--contact-text);
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--contact-text-light);
+}
+
+.contact-form .btn {
+  background: var(--contact-accent);
+  color: var(--contact-bg);
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: var(--contact-radius);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background: #a57d50;
+}
+
+/* Contact Info */
+.contact-info {
+  background: var(--contact-card);
+  padding: 30px;
+  border-radius: var(--contact-radius);
+  max-width: 400px;
+  flex-shrink: 0;
+}
+
+.contact-info h2 {
+  color: var(--contact-accent);
+  margin-bottom: 10px;
+}
+
+.contact-info h3 {
+  color: var(--contact-accent);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  color: var(--contact-text-light);
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  color: var(--contact-accent);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #a57d50;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+}

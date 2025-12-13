@@ -1,0 +1,140 @@
+:root {
+  --fr-bg: #0e0e0e;
+  --fr-card: #1a1a1a;
+  --fr-accent: #c59d5f;
+  --fr-text: #e6e6e6;
+  --fr-text-light: #b3b3b3;
+  --fr-radius: 12px;
+}
+
+.franchise-page {
+  background: var(--fr-bg);
+  min-height: 100vh;
+  color: var(--fr-text);
+  padding: 60px 10%;
+}
+
+/* Header */
+.franchise-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.franchise-header h1 {
+  font-size: 3rem;
+  color: var(--fr-accent);
+  margin-bottom: 10px;
+}
+
+.franchise-header p {
+  font-size: 1.1rem;
+  color: var(--fr-text-light);
+}
+
+/* Benefits Grid */
+.franchise-benefits h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--fr-accent);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.benefit-card {
+  background: var(--fr-card);
+  padding: 25px;
+  border-radius: var(--fr-radius);
+  text-align: center;
+  border: 1px solid #262626;
+  transition: 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--fr-accent);
+  box-shadow: 0px 0px 20px rgba(197, 157, 95, 0.2);
+}
+
+.benefit-card span {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.benefit-card h3 {
+  margin-bottom: 10px;
+  color: var(--fr-accent);
+}
+
+.benefit-card p {
+  color: var(--fr-text-light);
+  font-size: 0.95rem;
+}
+
+/* Form Section */
+.franchise-form-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.franchise-form-section h2 {
+  color: var(--fr-accent);
+  margin-bottom: 30px;
+}
+
+.franchise-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.franchise-form input,
+.franchise-form textarea {
+  width: 100%;              /* Full width inside the form */
+  height: 50px;             /* Fixed height for inputs */
+  padding: 12px 15px;
+  border-radius: var(--fr-radius);
+  border: none;
+  background: var(--fr-card);
+  color: var(--fr-text);
+  resize: none;
+  box-sizing: border-box;   /* Ensures padding doesn’t break width */
+}
+
+.franchise-form textarea {
+  height: 120px;            /* Taller height for textarea */
+}
+
+
+.franchise-form input::placeholder,
+.franchise-form textarea::placeholder {
+  color: var(--fr-text-light);
+}
+
+.franchise-form .btn {
+  background: var(--fr-accent);
+  color: var(--fr-bg);
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: var(--fr-radius);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.franchise-form .btn:hover {
+  background: #a57d50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

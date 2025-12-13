@@ -1,0 +1,137 @@
+.donations-page {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* HERO */
+.donation-hero {
+  background: url("../assets/images/donation-bg.png") center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.donation-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.donation-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.donation-hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.donation-hero-content p {
+  margin-top: 10px;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* PURPOSE */
+.donation-purpose {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.donation-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.donation-card {
+  width: 280px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.donation-card span {
+  font-size: 42px;
+}
+
+/* METHODS */
+.donation-methods {
+  background: #f8f5f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.method-boxes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.method-box {
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.secondary-method-box {
+  width: 250px;
+  min-height: 250px;
+
+}
+.secondary-method-box p {
+  font-size: 25px;
+  margin-bottom: 15px; 
+  text-align: justify; 
+  letter-spacing: 0.9px;
+}
+
+
+.qr-method-box {
+  width: 350px;
+  min-height: 500px;  /* 🔥 updated height only here */
+}
+
+
+.qr-method-box .qr-img {
+  width: 220px;
+}
+.donate-btn {
+  padding: 10px 20px;
+  background: #5b3a29;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* CTA */
+.donation-cta {
+  padding: 50px 20px;
+  background: #fff8e6;
+  text-align: center;
+}
+
+.donation-cta h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+
