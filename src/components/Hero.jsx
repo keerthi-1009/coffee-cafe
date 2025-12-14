@@ -1,10 +1,12 @@
 import React from "react";
 import "./Hero.css";
-import heroImg from "../assets/images/Hero.png";
+// import HeroImg from "../assets/images/Hero.jpg";
+const heroImage = "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200";
+
 
 export default function Hero() {
   return (
-    <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
+    <section className="hero" style={{ backgroundImage: `url(${HeroImg})` }}>
       <div className="hero-overlay"></div>
 
       <div className="hero-content container">

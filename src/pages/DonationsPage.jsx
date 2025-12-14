@@ -1,7 +1,7 @@
 import React from "react";
 import "./DonationsPage.css";
-import qrImage from "../assets/images/donation-qr.png";
-
+// import donationQr from "../assets/images/donation-qr.png";
+const donationQr = "https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=YourDonationLink";
 export default function DonationsPage() {
   return (
     <div className="donations-page">
@@ -56,7 +56,7 @@ export default function DonationsPage() {
           <div className="method-box qr-method-box">
   <h3>Donate via UPI</h3>
   <p>Scan the QR or use the UPI ID below.</p>
-  <img className="qr-img" src={qrImage} alt="Donation QR" />
+  <img className="qr-img" src={donationQr} alt="Donation QR" />
   <p className="upi-id">UPI ID: <strong>cafe@upi</strong></p>
 </div>
 
